@@ -1,0 +1,61 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:       #0a0c0f;
+  --surface:  #0f1217;
+  --border:   #1e2330;
+  --border2:  #2a3040;
+  --text:     #d4dae8;
+  --muted:    #5a6480;
+  --accent:   #00d4aa;
+  --accent2:  #0099ff;
+  --gain:     #00d4aa;
+  --loss:     #ff4d6d;
+  --warn:     #f0a500;
+  --mono:     "IBM Plex Mono", monospace;
+  --sans:     "IBM Plex Sans", sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+.fade-up {
+  animation: fadeUp 0.35s ease both;
+}
