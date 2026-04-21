@@ -1,8 +1,4 @@
 """Initial schema: instruments, trades, positions, market_prices
-
-Revision ID: 0001_initial
-Revises:
-Create Date: 2024-04-20
 """
 
 from alembic import op

@@ -1,8 +1,7 @@
 """
 main.py — FastAPI application entry point.
 
-This file does ONE thing: create the app and mount routers.
-No business logic here. All route logic lives in app/routers/.
+
 """
 
 from fastapi import FastAPI
