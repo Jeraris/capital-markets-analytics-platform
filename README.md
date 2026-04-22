@@ -192,4 +192,4 @@ Tests are split into two files:
 
 ## Author
 
-Jeremiah Arisekola-Ojo
+Jeremiah
